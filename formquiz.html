@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8"/>
+    <title>Form Example</title>
+
+    <style>
+        .button {
+          display: inline-block;
+          padding: 15px 25px;
+          font-size: 24px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: rgb(114, 176, 200);
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #fffafa;
+          align-self: center;
+        }
+        
+        .button:hover {background-color: rgb(99, 148, 167)}
+        
+        .button:active {
+          background-color: #1b4351;
+          box-shadow: 0 5px #ededed;
+          transform: translateY(4px);
+        }
+
+        fieldset {
+         border: 2px solid white;
+         border-radius: 10px;
+         background-color: lightcyan;
+         padding: 10px;
+         margin-bottom: 20px;
+        }
+  
+        </style>
+</head>
+<body style="background-color:skyblue">
+    <form>
+        <fieldset>
+            <legend><h3>User Information</h3></legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend><h3>Contact Information</h3></legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend><h3>Preferences</h3></legend>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="Drink">Favorite Drink:</label>
+            <select id="drink" name="drink">
+                <option value="Gatorade">Gatorade</option>
+                <option value="C2">C2</option>
+                <option value="Smart C">Smart C</option>
+                <option value="Red Bull">Red Bull</option>
+                <option value="Coffee">Coffee</option>
+            </select><br><br>
+            <label for="Food">Favorite Food:</label>
+            <select id="Food" name="Food">
+                <option value="Fries">Fries</option>
+                <option value="Burger">Burger</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Sinigang">Sinigang</option>
+            </select><br><br>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color"><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend><h3>Additional Information</h3></legend>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="2" cols="30"></textarea><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="99"><br><br>
+            <label for="file">Upload a File:</label>
+            <input type="file" id="file" name="file"><br><br>
+            <label for="datetime">Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime"><br><br>
+        </fieldset>
+        
+        
+        <button type="submit" class="button" >Submit</button>
+        
+         
+    </form>
+</body>
+</html>
